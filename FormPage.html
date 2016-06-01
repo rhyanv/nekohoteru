@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Book an Appointment</title>
+
+    <!-- Bootstrap Core CSS -->
+  <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">  
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  
+    
+	<!-- Google Font --> 
+	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+
+    <!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" media="screen"
+	href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">	 
+    <link href="css/heroic-features.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- NAVIGATION   ================================================== -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand">Neko Hoteru</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="petproducts.html" >Pet Products</a>
+                    </li>
+                    <li>
+                        <a href="adoptapet.html">Adopt-a-Pet</a>
+                    </li>
+                     <li>
+                        <a href="FormPage.html">Book Appointment</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact us</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+					<li><a href="login.html" class="active" ><span class="glyphicon glyphicon-user"></span> Login</a></li>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <!-- END Navigation-->
+    
+    
+<!-- PAGE CONTENTS
+================================================== -->
+<div class=" container main-container">
+
+	<div class="well">
+		
+	    <h1><strong>Book an Appointment</strong></h2>
+	    </br>
+		</br>
+	    <p>Enter basic information</p>
+	  
+	   <!-- <div id="menu">
+	      <ul>
+	        <li><a href="Home%20page.html"> Home</a></li>
+	        <li><a href="http://cis1.towson.edu/~cisweb/"> CIS Department Website</a></li>
+	      </ul>
+	    </div>
+	    -->
+	</br>
+
+	        <form name="FORM" action="#" onsubmit=" return validateForm()" method="post">
+	         
+		        <div id="fName-group" class="form-group">    
+	            	<label for= "fName"> First Name: </label> <input type="text" name="name" class="form-control">
+		        </div>
+		        <div id="lName-group" class="form-group">    
+	            	<label for= "lName"> Last Name: </label> <input type="text" name="name" class="form-control">
+		        </div>	 	    			
+		        <div id="email-group" class="form-group">    
+	            	<label for= "email"> Email: </label> <input type="text" name="name" class="form-control">
+		        </div>	
+					        
+	            <div id="petname-group" class="form-group">    
+	            	<label for= "petname"> Pet name: </label> <input type="text" name="major" class="form-control">
+		        </div>
+		        <br>
+		         <div>    
+	            	<label for= "pettype"> Pet type: </label> <name="pettype">
+	            		<select>
+		            		  <option value=""></option>
+							  <option value="Dog">Dog</option>
+							  <option value="Cat">Cat</option>
+						</select>
+		         </div>
+		         <br>
+		         <div >    
+	            	<label for= "petsex"> Pet sex: </label> <name="petsex" >
+	            		<select>
+		            		  <option value=""></option>
+							  <option value="Male">Male</option>
+							  <option value="Female">Female</option>
+						</select>
+						</br>
+						 <br>
+						<p>Is your pet Neutered/spayed?</p>
+				            <input type="radio" name="prereq" value="Yes" > Yes 
+				            <input type="radio" name="prereq" value="No" > No
+		         </div>
+		         </br>
+		         
+		         <div id="wt-group" Contact="form-group">    
+	            	<label for= "wt"> Weight lbs</label> <input type="text" name="contact" class="form-control">
+		        </div>
+		        
+	      
+				<div id="contact-group" Contact="form-group">    
+	            	<label for= "contact"> Contact Number</label> <input type="text" name="contact" class="form-control">
+		        </div>
+		       
+				</br>
+				
+				
+						
+	           Would you like to receive text updates regarding your appointment?
+	           </br>
+	            <input type="radio" name="prereq" value="Yes" > Yes 
+	            <input type="radio" name="prereq" value="No" checked="checked"> No
+	            </br>
+				</br>
+				
+
+				
+	            Type of service:
+		            <select>
+					  <option value="Bronze Grooming Service">Bronze Grooming Service</option>
+					  <option value="Silver Grooming Service">Silver Grooming Service</option>
+					  <option value="Gold Grooming Service">Gold Grooming Service</option>
+					  <option value="Platinum Grooming Service">Platinum Grooming Service</option>
+					</select>
+				 <br/>
+		         <br/>
+		         
+				Select Groomer:
+		            <select>
+					  <option value="Any">Any</option>
+					  <option value="Alex">Alex</option>
+					  <option value="Jane">Jane</option>
+					</select>
+
+	            <br/>
+	            <br/>
+	            
+
+	<p>Select date and time:</p>
+  <div id="datetimepicker" class="input-append date">
+      <input type="text"></input>
+      <span class="add-on">
+        <i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+      </span>
+   </div>
+				</br>
+	            <p>Please write any additional comment/notes here:</p>
+	                <textarea name="goals" rows="4" cols="30">Max 100 words</textarea>
+	                <br/>
+
+	                <br/>
+	                <br/>
+	                
+	          
+	            <p><strong>Note:</strong> Before clicking Confirm Appointment, please click yes to verify that you understand any cancellations within 24 hours of your appointment or missed appointment times. will result in a 25$ fine</p> <!-- Client stated there would be a fee if the customer tried canceling or not showing up to their appointmnet. -->
+	            
+	            <input type="radio" name="prereq" value="Yes" > Yes 
+	            <input type="radio" name="prereq" value="No"  > No
+	            
+	            
+	            <p><br><strong>IMPORTANT:</strong><i> YOU WILL NEED TO SUBMIT YOUR VACCINATION DOCUMENTS FOR YOUR PETS or BRING IN YOUR DOCUMENTS. SUBMIT YOUR DOCUMENTS HERE: <br></i></p>
+	            	<input type="file" size="50" />
+	            	<input type="submit" value="Upload File"/> 
+				<br/>
+	            <br/>
+
+	                <input type="submit" value="Confirm Appointment"/> <input type="reset"/>
+	               
+	
+	        </form>
+	        
+
+    <!-- Javascript
+    ================================================== -->  
+       <!-- DateTimePicker Javascript -->
+	     <script type="text/javascript"
+     src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+    </script> 
+    <script type="text/javascript"
+     src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js">
+    </script>
+    <script type="text/javascript"
+     src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js">
+    </script>
+    <script type="text/javascript"
+     src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.pt-BR.js">
+    </script>
+    <script type="text/javascript">
+      $('#datetimepicker').datetimepicker({
+        format: 'dd/MM/yyyy hh:mm:ss',
+        language: 'en-BR'
+      });
+    </script>
+    <!-- END of DateTimePicker Javascript -->
+    
+    <!-- Validation scripts -->
+    <script>
+		function validateForm() {
+		    var lName = document.forms["form"]["lName"].value;
+		    var fName = document.forms["form"]["fName"].value;
+		    //var StudentID = document.forms["form"]["StudentID"].value;
+		    var petname = document.forms["form"]["petname"].value;
+		    var contact = document.forms["form"]["contact"].value;
+		    var wt = document.forms["form"]["wt"].value;
+		    var email = document.forms["form"]["email"].value;
+		    if (name == null || name == "" || StudentID == null || major == null || major == "" || contact == null || contact == "" || email == null || email == "") {
+		        alert("All fields must be filled out");
+		        return false;
+		    }
+		    var stringMatch = /^[A-z ]+$/; //Expression that allows any characters from a-z
+		   
+		    if(!stringMatch.test(fName)){
+			    alert("Invalid characters detected. Please enter a valid name");
+			     return false;
+		    }
+		     if(!stringMatch.test(lName)){
+			    alert("Invalid characters detected. Please enter a valid name");
+			     return false;
+		    }
+		   
+		    if(!stringMatch.test(petname)){
+			    alert("Invalid characters detected. Please enter a valid name");
+			     return false;
+		    }
+		    if(email.indexOf("@") == -1 || email.indexOf(".") == -1){
+				alert("Please enter a valid email");
+				return false;
+		   }	
+		   
+		   if(isNaN(parseInt(contact))){
+		   		alert("You have entered incorrect charatcers in the contact")
+		   }
+		   if(isNaN(parseInt(wt))){
+		   		alert("You have entered incorrect charatcers in the contact")
+		   }
+   			else if (!(contact.length == 10)){
+	   			alert("The phone number length is incorrect. You need 10 digits.");
+	   		}
+	   		return false;
+    
+		}
+		
+	</script> 
+	<!-- End of Validation Scripts -->
+	
+<!-- 	jQuery (necessary for Bootstrap's JavaScript plugins)  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!--     Include all compiled plugins (below), or include individual files as needed  -->
+    <script src="js/bootstrap.min.js"></script> 
+    
+ <hr>
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p align="center">Copyright &copy; NEKO HOTERU 2016</p>
+                </div>
+            </div>
+        </footer>
+
+
+</body>
+
+</html>
+
+	
